@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group 11</title>
+  <!--Bootstap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--Main Css file-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <!--landing page body-->
+    
+  <!--main field ends-->
+  <section>
+    <!--Heading-->
+             <!--main field-->
+             <div class="bg-dark opacity-75 text-white fw-bold">
+              <div class="row">
+               <!--logo-->
+               <div class="col-3">
+            <img id="logo" class="img-fluid" src="/assets/img/logo.png" alt="logo" />
+          </div>
+          <div class="col-9">
+            <!--Main heading-->
+               <h1 class="display-3"> The Wheel of Life</h1>
+              </div>
+              </div>
+          </div>
+        <!--Heading ends-->
+        <div class="jumbotron col-12 alinged top-right">
+          <h1 class="display-4">TaskManager Sample</h1>
+          <div id="list-items">
+              <div class="card" style="width: 18rem;">                
+                  <div class="card-body">
+                      <h5 class="card-title">Studying</h5>
+                      <p class="card-text">Description</p>
+                      <p class="card-text">AssignTo:Nataly</p>
+                      <p class="card-text">DueDate:1-20-2023</p>
+                      <span class="badge badge-primary">IN PROGRESS</span>
+                      <a href="#" class="btn btn-primary">Delete</a>
+                  </div>
+              </div>
+              <br />
+              <div class="card" style="width: 18rem;">                
+                  <div class="card-body">
+                      <h5 class="card-title">Reading</h5>
+                      <p class="card-text">Description: lord of the rings</p>
+                      <p class="card-text">assignto: Islam</p>
+                      <p class="card-text">Due Date: 1-22-2023</p>
+                      <span class="badge badge-success">DONE</span>
+                      <a href="#" class="btn btn-primary">Delete</a>
+                  </div>
+              </div>
+              <br />
+              <div class="card" style="width: 18rem;">                
+                  <div class="card-body">
+                      <h5 class="card-title">Walking</h5>
+                      <p class="card-text">Description: Mountaing Everest</p>
+                      <p class="card-text">Banchi</p>
+                      <p class="card-text">Due Date: Feb 20 - 2023</p>
+                      <span class="badge badge-warning">PENDING</span>
+                      <a href="#" class="btn btn-primary">Delete</a>
+                  </div>
+              </div>
+              <br />
+              <div class="card" style="width: 18rem;">                
+                  <div class="card-body">
+                      <h5 class="card-title">Traveling</h5>
+                      <p class="card-text">Description: Asia</p>
+                      <p class="card-text">Alemayu</p>
+                      <p class="card-text">Due Date: Aug 20 - 2023</p>
+                      <span class="badge badge-success">DONE</span>
+                      <a href="#" class="btn btn-primary">Delete</a>
+                  </div>
+              </div>
+              <br />
+              <div class="card" style="width: 18rem;">                
+                  <div class="card-body">
+                      <h5 class="card-title">Sleeping</h5>
+                      <p class="card-text">Description: not much</p>
+                      <p class="card-text">Nataly is assignto</p>
+                      <p class="card-text">Due Date: Oct 15 - 2023</p>
+                      <span class="badge badge-primary">IN PROGRESS</span>
+                      <a href="#" class="btn btn-primary">Delete</a>
+                  </div>
+              </div>
+              <br/>
+          </div>
+      </div>   
+        <section>  
+          <div class="container">
+              <h1 class="my-5">Task List</h1>
+              <div class="row mb-5">
+                  <div class="col">
+                      <h2>New Task</h2>
+                      <form id="newTaskForm">
+                          <div class="form-group">
+                              <label for="newTaskNameInput">Name</label>
+                              <input type="text" class="form-control" id="newTaskNameInput">
+                          </div>
+                          <div class="form-group">
+                              <label for="newTaskDescription">Description</label>
+                              <textarea type="text" class="form-control" id="newTaskDescription"></textarea>
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group col">
+                                  <label for="newTaskAssignedTo">Assigned To</label>
+                                  <input type="text" class="form-control" id="newTaskAssignedTo">
+                              </div>
+                              <div class="form-group col">
+                                  <label for="newTaskDueDate">Due Date</label>
+                                  <input type="date" class="form-control" id="newTaskDueDate">
+                              </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+                      </form>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <h2>Tasks</h2>
+                      <ul class="list-group" id="tasksList">
+                          <li class="list-group-item">
+                              <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                  <h5>Studying</h5>
+                                  <span class="badge badge-danger">TODO</span>
+                              </div>
+                              <div class="d-flex w-100 mb-3 justify-content-between">
+                                  <small>Assigned To: Banchi</small>
+                                  <small>Due: 11/26/2022</small>
+                              </div>
+                              <p>Studying to past the JS exam!</p>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col"></div>
+              </div>
+          </div>
+      
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+              crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+              integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+              crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+              integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+              crossorigin="anonymous"></script>
+      
+          <script src="js/TaskManager.js"></script>
+          <script src="js/index.js"></script>
+        </section>  
+    
+      </body>
+      
+      </html>
+             
+    </section>
+     <!--Js--> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     <script type="module" src="/JS/index.js"></script>
+     <scripts type="module" src="/JS/taskManager.js"></scripts>
+     <script type="module" src="/test/test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+
+/*logo style*/
+body {
+  /* Add image */
+  background-image: url('/assets/img/background.jpg');
+  /* Make image center */
+  background-position: center center;
+  /* Make image fixed */
+  background-attachment: fixed;
+   /* Set background size auto */
+   background-size: cover;
+  
+}
+/* Media query for mobile devices  */
+@media only screen and (max-width: 767px)      
+{ body{
+/* Add image */
+background-image: url("/assets/img/background.jpg");
+}
+}
+input[type="submit"] {
+display: block;
+width: 30%;
+margin: 0 auto;
+height: 2em;
+font-size: 1.1rem;
+background-color: #e2e2ea;
+border-color: none;
+
+}  
